@@ -1,0 +1,18 @@
+{
+  "includeHeader": true,
+  "title": "Employee Salary Report",
+  "summary": [
+    {
+      "label": "Max Total Compensation",
+      "operation": "SUM",
+      "columns": ["baseSalary", "bonus"]
+    }
+  ],
+  "calculations": [
+    {
+      "operation": "SUM",
+      "columns": ["baseSalary", "bonus"],
+      "resultColumn": "Total Compensation"
+    }
+  ]
+}

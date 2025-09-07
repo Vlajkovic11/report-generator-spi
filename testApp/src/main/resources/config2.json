@@ -1,0 +1,61 @@
+{
+  "includeHeader": true,
+  "title": "Detailed Report",
+  "summary": [
+    {
+      "label": "Base",
+      "operation": "SUM",
+      "columns": ["baseSalary"]
+    },
+    {
+      "label": "Some",
+      "value": "5"
+    }
+  ],
+  "calculations": [
+    {
+      "operation": "SUM",
+      "columns": ["baseSalary", "bonus"],
+      "resultColumn": "Total Compensation"
+    },
+    {
+      "operation": "AVERAGE",
+      "columns": ["baseSalary", "highestSalary"],
+      "resultColumn": "Average High Salary"
+    }
+  ],
+  "formatting": {
+    "titleStyle": {
+      "isBold": true,
+      "isItalic": false,
+      "isUnderlined": true,
+      "color": "#FF5733"
+    },
+    "headerStyle": {
+      "isBold": true,
+      "isItalic": true,
+      "isUnderlined": false,
+      "color": "#8B3AA2"
+    },
+    "summaryStyle": {
+      "isBold": false,
+      "isItalic": true,
+      "isUnderlined": true,
+      "color": "#4CAF50"
+    },
+    "columnStyles": {
+      "Total Compensation": {
+        "isBold": true,
+        "isItalic": false,
+        "isUnderlined": false,
+        "color": "#0000FF"
+      },
+      "Average High Salary": {
+        "isBold": false,
+        "isItalic": true,
+        "isUnderlined": false,
+        "color": "#FF0000"
+      }
+    }
+  }
+}

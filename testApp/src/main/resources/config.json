@@ -1,0 +1,15 @@
+{
+  "includeHeader": true,
+  "calculations": [
+    {
+      "operation": "SUM",
+      "columns": ["baseSalary", "bonus"],
+      "resultColumn": "Total Compensation"
+    },
+    {
+      "operation": "AVERAGE",
+      "columns": ["highestSalary", "lowestSalary"],
+      "resultColumn": "Average Salary Range"
+    }
+  ]
+}
